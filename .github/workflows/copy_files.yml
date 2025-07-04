@@ -1,0 +1,11 @@
+- name: Copy to Windows
+  uses: appleboy/scp-action@v1
+  with:
+    host: ${{ secrets.HOST }}
+    username: ${{ secrets.USERNAME }}
+    key: ${{ secrets.SSH_PRIVATE_KEY }}
+    port: 22
+    source: "your_source_path"
+    target: "/c/path/to/target/"
+    tar_dereference: true
+    rm: true
