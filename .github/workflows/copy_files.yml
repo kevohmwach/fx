@@ -11,9 +11,9 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          #  key: ${{ secrets.SSH_PRIVATE_KEY}}
+          #  key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: ${{ secrets.SOURCE }}
           target: ${{ secrets.TARGET }}
-          tar_dereference: true
+          sudo tar_dereference: true
           rm: true
